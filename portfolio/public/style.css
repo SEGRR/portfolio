@@ -1,21 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+
+
+:root {
+    --primary-color: #3498db; /* Declare a CSS variable for the primary color */
+    --background-color: #f1f1f1; /* Declare a CSS variable for the background color */
+  }
+
 
 body{
     margin:0;
     padding: 0;
-    font-family: 'Ubuntu'
+    font-family: 'Ubuntu';
+    overflow-x: hidden;
 }
 
 .App{
+    background-color: var(--background-color);
+}
+
+
+.container{
+    background-color: var(--background-color);
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Barlow';
+    display: flex;
+    flex-direction:row;
+   align-items: center;
+    padding: 100px;
+}
+
+.profile{
+    background-color: var(--background-color);
+    width: 30vw;
+    height: 60vh;
+}
+
+
+
+/* .App{
     background-color: #161A30;
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
-    flex-direction:column;
+    /* flex-direction:column;
    justify-content: center;
-   align-items: center;
+   align-items: center; 
     
-}
+} */
 
 .countdown-container{
     display: flex;
@@ -40,5 +73,84 @@ body{
 }
 
 h1 , h2 , p{
-    color: #F0ECE5;
+    color: var(--primary-color);
 }
+
+.header-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+  }
+
+.welcome-section{
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.welcome-section h1{
+    padding: 0;
+}
+
+.profile-section{
+    width: 90vw;
+   display: flex;
+   justify-content: space-between;
+}
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .profile-pic {
+    width: 20rem; /* Adjust as needed */
+    height: 20rem; /* Adjust as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .right-section {
+    margin-left: 10px;
+    width: 30vw;
+    padding: 10px;
+    
+  }
+
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  ul {
+    margin-top: 20px;
+    margin-left: 30px;
+    list-style-type: none;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  .theme-toggle button {
+    background-color: var(--background-color); 
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
