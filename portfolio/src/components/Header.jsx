@@ -17,7 +17,7 @@ export default function Header(){
           <h1>Sufiyan Shaikh Sajid</h1>
         </div>
         <div className="right-section">
-          <p>Your introduction goes here...</p>
+          <p> Hello, I'm  Shaikh Sufiyan, an Engineer with a passion for Software Development . With a blend of 6 years of experience and a commitment to write high quality code, I thrive in web development and programming in general.</p>
         </div>
         </div>
       </div>

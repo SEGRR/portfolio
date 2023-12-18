@@ -2,9 +2,11 @@
 import Header from './components/Header'
 import React, { useState } from 'react';
 import Nav from './components/Nav';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
 
   const toggleTheme = () => {
     setIsDarkTheme((prevTheme) => !prevTheme);
@@ -21,6 +23,8 @@ function App() {
     <div className='App'>
       <Nav toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       <Header />
+      <Projects/>
+      <Contact/>
     </div>
   );
 }
