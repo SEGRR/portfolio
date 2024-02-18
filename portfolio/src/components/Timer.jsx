@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 
 export default function Timer(){
 
-    const rollout_time = new Date("01/01/2024").getTime();
+    const rollout_time = new Date("28/02/2024").getTime();
     const default_value = rollout_time - new Date().getTime(); 
     const [time , setTime] = useState(default_value);
     const timer = useRef();
